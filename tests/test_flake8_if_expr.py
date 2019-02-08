@@ -28,7 +28,7 @@ IF_EXPR = 'x = 1 if 2 else 3'
         (f'{IF_EXPR}  # noqa : T100', True),
     ),
 )
-def test_true(tmpdir, src, expect_error):
+def test_checker(tmpdir, src, expect_error):
     path = tmpdir.join('code.py')
     path.write(src)
     has_error = bool(list(IfExprChecker(None, path).run()))
