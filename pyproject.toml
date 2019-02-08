@@ -10,7 +10,7 @@ homepage = "https://pypi.org/project/flake8-if-expr"
 keywords = ['flake8', 'linter']
 
 [tool.poetry.plugins."flake8.extension"]
-K100 = 'flake8_if_expr:IfExprChecker'
+KEK100 = 'flake8_if_expr:IfExprChecker'
 
 [tool.poetry.dependencies]
 python = "^3.6"

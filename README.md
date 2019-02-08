@@ -27,7 +27,7 @@ x = 1 if 2 else 3
 
 ```bash
 $ flake8 code.py
-./code.py:1:5: K100 don`t use "[on_true] if [expression] else [on_false]" syntax
+./code.py:1:5: KEK100 don`t use "[on_true] if [expression] else [on_false]" syntax
 x = 1 if 2 else 3
     ^
 ```
