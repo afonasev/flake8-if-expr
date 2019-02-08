@@ -45,4 +45,4 @@ MIT
 ### 0.1.1 - 2019.02.08
 
 * Remove pycodestyle from dependencies
-* KEK101 error code #2
+* KEK101 error code [#2](https://github.com/Afonasev/flake8-if-expr/pull/2)
