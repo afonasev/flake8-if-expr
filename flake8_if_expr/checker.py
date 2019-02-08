@@ -4,7 +4,7 @@ from typing import List, Tuple
 import pycodestyle
 
 IF_EXPR_ERROR_MSG = (
-    'K100 don`t use "[on_true] if [expression] else [on_false]" syntax'
+    'KEK100 don`t use "[on_true] if [expression] else [on_false]" syntax'
 )
 
 
