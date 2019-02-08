@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "flake8-if-expr"
 version = "0.1.0"
-description = ""
+description = "Check for if expression (ternary operator)"
 authors = ["Afonasev Evgeniy <ea.afonasev@gmail.com>"]
 license = "MIT"
 readme = 'README.md'
