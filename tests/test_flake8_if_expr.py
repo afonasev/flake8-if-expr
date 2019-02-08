@@ -1,6 +1,8 @@
 import pytest
 
-from flake8_if_expr import IfExprChecker
+from flake8_if_expr.checker import ERROR_CODE, IfExprChecker
+
+IF_EXPR = 'x = 1 if 2 else 3'
 
 
 @pytest.mark.parametrize(
@@ -11,9 +13,19 @@ from flake8_if_expr import IfExprChecker
         # if stmt
         ('if x:\n    x = 1', False),
         # if expr
-        ('x = 1 if 2 else 3', True),
+        (IF_EXPR, True),
         # noqa
-        ('x = 1 if 2 else 3  # noqa', False),
+        (f'{IF_EXPR}  # noqa', False),
+        # noqa for certain error code
+        (f'{IF_EXPR}  # noqa:{ERROR_CODE}', False),
+        (f'{IF_EXPR}  # noqa: {ERROR_CODE}', False),
+        (f'{IF_EXPR}  # noqa : {ERROR_CODE}', False),
+        # noqa with other comments
+        (f'{IF_EXPR}  # pylint:disable NOQA bla bla', False),
+        # noqa for other error code
+        (f'{IF_EXPR}  # noqa:T100', True),
+        (f'{IF_EXPR}  # noqa: T100', True),
+        (f'{IF_EXPR}  # noqa : T100', True),
     ),
 )
 def test_true(tmpdir, src, expect_error):

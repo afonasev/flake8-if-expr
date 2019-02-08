@@ -1,6 +1,6 @@
 # flake8-if-expr
 
-[![pypi](https://img.shields.io/badge/pypi-0.1.0-orange.svg)](https://pypi.org/project/flake8-if-expr)
+[![pypi](https://badge.fury.io/py/flake8-if-expr.svg)](https://pypi.org/project/flake8-if-expr)
 ![Python: 3.6+](https://img.shields.io/badge/Python-3.6+-blue.svg)
 ![Downloads](https://img.shields.io/pypi/dm/flake8-if-expr.svg)
 [![Build Status](https://travis-ci.org/Afonasev/flake8-if-expr.svg?branch=master)](https://travis-ci.org/Afonasev/flake8-if-expr)
@@ -41,3 +41,8 @@ MIT
 ### 0.1.0 - 2019.02.07
 
 * First release
+
+### 0.1.1 - 2019.02.08
+
+* Remove pycodestyle from dependencies
+* KEK101 error code #2
