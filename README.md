@@ -46,3 +46,7 @@ MIT
 
 * Remove pycodestyle from dependencies
 * KEK101 error code [#2](https://github.com/Afonasev/flake8-if-expr/pull/2)
+
+### 0.2.0 - 2019.02.09
+
+* Rewriting with flake8-plugin-utils

@@ -176,6 +176,14 @@ version = "0.1.0"
 flake8 = "*"
 
 [[package]]
+category = "main"
+description = "Package provide base classes and utils for flake8 plugin writing"
+name = "flake8-plugin-utils"
+optional = false
+python-versions = ">=3.6,<4.0"
+version = "0.1.0"
+
+[[package]]
 category = "dev"
 description = "Polyfill package for Flake8 plugins"
 name = "flake8-polyfill"
@@ -421,7 +429,7 @@ python-versions = "*"
 version = "1.11.1"
 
 [metadata]
-content-hash = "b62aa9d6e74edbca83a34f36276e053e74a05770c8703fa7d32778fddaed614e"
+content-hash = "9f121e6787eca28ee3ee9d8f4a4c2754a051a8d1e924163759931742502c6115"
 python-versions = "^3.6"
 
 [metadata.hashes]
@@ -442,6 +450,7 @@ flake8-eradicate = ["0953cd3bcae4bfd04d45075234e0b5fd465ff50ecc56cdcaf0027da7516
 flake8-isort = ["3c107c405dd6e3dbdcccb2f84549d76d58a07120cd997a0560fab8b84c305f2a", "76d7dd6aec2762c608b442abebb0aaedb72fc75f9a075241a89e4784d8a39900"]
 flake8-logging-format = ["ca5f2b7fc31c3474a0aa77d227e022890f641a025f0ba664418797d979a779f8"]
 flake8-pie = ["c811c10e2cd93d1143b1ecc3ef42072bd4c7ebaebe20946449f0b442150affa6", "f5d72d9583300c2ad9bdee77d5f6cb9982c2ee7481cd75dc4a917f63ea15333d"]
+flake8-plugin-utils = ["4e6716c8c773e0803c41776d4eff1ef7653051a8aacbf8c7accd6969951ab7d0", "5b9bb83903b6e6b3344f400e12fc7f2a61498164dce8301ac19a42475b640eb1"]
 flake8-polyfill = ["12be6a34ee3ab795b19ca73505e7b55826d5f6ad7230d31b18e106400169b9e9", "e44b087597f6da52ec6393a709e7108b2905317d0c0b744cdca6208e670d8eda"]
 flake8-pytest = ["61686128a79e1513db575b2bcac351081d5a293811ddce2d5dfc25e8c762d33e", "b4d6703f7d7b646af1e2660809e795886dd349df11843613dbe6515efa82c0f3"]
 flake8-quotes = ["fd9127ad8bbcf3b546fa7871a5266fd8623ce765ebe3d5aa5eabb80c01212b26"]
