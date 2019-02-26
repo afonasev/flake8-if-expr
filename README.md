@@ -38,15 +38,19 @@ MIT
 
 ## Change Log
 
-### 0.1.0 - 2019.02.07
+### 0.2.1 - 2019.02.26
 
-* First release
+* update flake8-plugin-utils version
+
+### 0.2.0 - 2019.02.09
+
+* Rewriting with flake8-plugin-utils
 
 ### 0.1.1 - 2019.02.08
 
 * Remove pycodestyle from dependencies
 * KEK101 error code [#2](https://github.com/Afonasev/flake8-if-expr/pull/2)
 
-### 0.2.0 - 2019.02.09
+### 0.1.0 - 2019.02.07
 
-* Rewriting with flake8-plugin-utils
+* First release
