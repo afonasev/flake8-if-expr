@@ -38,6 +38,10 @@ MIT
 
 ## Change Log
 
+### 1.0.0 - 2019.05.23
+
+* update flake8-plugin-utils version to v1.0
+
 ### 0.2.1 - 2019.02.26
 
 * update flake8-plugin-utils version

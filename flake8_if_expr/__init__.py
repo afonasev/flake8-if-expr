@@ -2,11 +2,11 @@ import ast
 
 from flake8_plugin_utils import Error, Plugin, Visitor
 
-__version__ = '0.2.1'
+__version__ = '1.0.0'
 
 
 class IfExprFound(Error):
-    code = 'KEK100'
+    code = 'IF100'
     message = (
         f'{code} don`t use "[on_true] if [expression] else [on_false]" syntax'
     )
