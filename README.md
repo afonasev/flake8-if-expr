@@ -8,9 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://en.wikipedia.org/wiki/MIT_License)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-Check for if expression (ternary operator).
-
-This module provides a plugin for flake8, the Python code checker.
+The plugin checks `if expressions` (ternary operator).
 
 ## Installation
 
@@ -37,6 +35,10 @@ x = 1 if 2 else 3
 MIT
 
 ## Change Log
+
+### 1.0.0 - 2019.05.23
+
+* update flake8-plugin-utils version to v1.0
 
 ### 0.2.1 - 2019.02.26
 
