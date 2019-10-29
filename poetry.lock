@@ -169,11 +169,8 @@ category = "dev"
 description = "A flake8 extension that implements misc. lints"
 name = "flake8-pie"
 optional = false
-python-versions = "*"
-version = "0.1.0"
-
-[package.dependencies]
-flake8 = "*"
+python-versions = ">=3.6"
+version = "0.4.2"
 
 [[package]]
 category = "main"
@@ -448,7 +445,7 @@ python-versions = ">=2.7"
 version = "0.5.1"
 
 [metadata]
-content-hash = "a5bab98b87d7e6b60576a013683bf53c592e0311adf177dec0028747345b608e"
+content-hash = "c5f4b0a88a646ad7041f5d1b3e7c6d2cb4934d62c36f5caf969a3e017ed56c66"
 python-versions = "^3.6"
 
 [metadata.hashes]
@@ -468,7 +465,7 @@ flake8-comprehensions = ["b83891fec0e680b07aa1fd92e53eb6993be29a0f3673a09badbe8d
 flake8-eradicate = ["0953cd3bcae4bfd04d45075234e0b5fd465ff50ecc56cdcaf0027da751632127", "c762fbb5c3e3694c9ba656d38477b2dcca6599b8baeee4984d05d655591a6f83"]
 flake8-isort = ["1e67b6b90a9b980ac3ff73782087752d406ce0a729ed928b92797f9fa188917e", "81a8495eefed3f2f63f26cd2d766c7b1191e923a15b9106e6233724056572c68"]
 flake8-logging-format = ["ca5f2b7fc31c3474a0aa77d227e022890f641a025f0ba664418797d979a779f8"]
-flake8-pie = ["c811c10e2cd93d1143b1ecc3ef42072bd4c7ebaebe20946449f0b442150affa6", "f5d72d9583300c2ad9bdee77d5f6cb9982c2ee7481cd75dc4a917f63ea15333d"]
+flake8-pie = ["7e24f7749cc701b0842901b676ca5a4b1c4e3719bcad1192c873dea70b6dee86", "f7a821815e60023b9d50d437b97835f44ec15c11a75b20f7f832b7e6e67a7f90"]
 flake8-plugin-utils = ["1ac5eb19773d5c7fdde60b0d901ae86be9c751bf697c61fdb6609b86872f3c6e", "24b4a3b216ad588951d3d7adef4645dcb3b32a33b878e03baa790b5a66bf3a73"]
 flake8-polyfill = ["12be6a34ee3ab795b19ca73505e7b55826d5f6ad7230d31b18e106400169b9e9", "e44b087597f6da52ec6393a709e7108b2905317d0c0b744cdca6208e670d8eda"]
 flake8-pytest = ["61686128a79e1513db575b2bcac351081d5a293811ddce2d5dfc25e8c762d33e", "b4d6703f7d7b646af1e2660809e795886dd349df11843613dbe6515efa82c0f3"]
