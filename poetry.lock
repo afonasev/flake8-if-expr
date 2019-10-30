@@ -140,10 +140,10 @@ description = "Flake8 plugin to find commented out code"
 name = "flake8-eradicate"
 optional = false
 python-versions = ">=3.6,<4.0"
-version = "0.2.0"
+version = "0.2.3"
 
 [package.dependencies]
-attrs = ">=18.2.0,<19.0.0"
+attrs = ">=18.2,<20.0"
 eradicate = ">=0.2.1,<1.1.0"
 flake8 = ">=3.5,<4.0"
 
@@ -449,7 +449,7 @@ python-versions = ">=2.7"
 version = "0.5.1"
 
 [metadata]
-content-hash = "5fc971b2fd762e0f202de17faabb561dae80fc7c6dadf341874ab1ec2045fe7c"
+content-hash = "5650480682955f367aca4a47cedd39e892fd74cbc1eac7a8111d2c350f5f68b6"
 python-versions = "^3.6"
 
 [metadata.hashes]
@@ -466,7 +466,7 @@ eradicate = ["4ffda82aae6fd49dfffa777a857cb758d77502a1f2e0f54c9ac5155a39d2d01a"]
 flake8 = ["859996073f341f2670741b51ec1e67a01da142831aa1fdc6242dbf88dffbe661", "a796a115208f5c03b18f332f7c11729812c8c3ded6c46319c59b53efd3819da8"]
 flake8-builtins = ["8d806360767947c0035feada4ddef3ede32f0a586ef457e62d811b8456ad9a51", "cd7b1b7fec4905386a3643b59f9ca8e305768da14a49a7efb31fe9364f33cd04"]
 flake8-comprehensions = ["d1337979289e2877693b49a862c3e193a443833e2843e0e2450d54abd93aea9a", "d3a8339e262205a15a4a84f6363eabb63e2dbd8292c4655366aaa0452eb28496"]
-flake8-eradicate = ["0953cd3bcae4bfd04d45075234e0b5fd465ff50ecc56cdcaf0027da751632127", "c762fbb5c3e3694c9ba656d38477b2dcca6599b8baeee4984d05d655591a6f83"]
+flake8-eradicate = ["a42c501d40b2beb6bcbbcb961169b16a7794b179dcc990cb317c2e655c19e379", "dd9baf6428319b946b85964c5ad0fb41d68c8998d40ac4ce73f37b9f41c535be"]
 flake8-isort = ["1e67b6b90a9b980ac3ff73782087752d406ce0a729ed928b92797f9fa188917e", "81a8495eefed3f2f63f26cd2d766c7b1191e923a15b9106e6233724056572c68"]
 flake8-logging-format = ["ca5f2b7fc31c3474a0aa77d227e022890f641a025f0ba664418797d979a779f8"]
 flake8-pie = ["7e24f7749cc701b0842901b676ca5a4b1c4e3719bcad1192c873dea70b6dee86", "f7a821815e60023b9d50d437b97835f44ec15c11a75b20f7f832b7e6e67a7f90"]
