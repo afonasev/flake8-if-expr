@@ -20,7 +20,7 @@ flake8-plugin-utils = "^1.0"
 black = {version = "^19.10b0",allows-prereleases = true}
 flake8 = "^3.7"
 flake8-builtins = "^1.4"
-flake8-comprehensions = "^3.0"
+flake8-comprehensions = "^3.1"
 flake8-eradicate = "^0.2.3"
 flake8-isort = "^2.6"
 flake8-logging-format = "^0.6.0"
