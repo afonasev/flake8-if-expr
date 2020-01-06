@@ -32,7 +32,7 @@ pep8-naming = "^0.9.1"
 pylint = "^2.4"
 pytest = "^5.3"
 pytest-cov = "^2.8"
-pytest-mock = "^1.13"
+pytest-mock = "^2.0"
 unify = "^0.5"
 
 [build-system]
