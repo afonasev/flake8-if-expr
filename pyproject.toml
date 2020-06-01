@@ -18,7 +18,7 @@ flake8-plugin-utils = "^1.0"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^19.10b0",allows-prereleases = true}
-flake8 = "^3.7"
+flake8 = "^3.8"
 flake8-builtins = "^1.5"
 flake8-comprehensions = "^3.2"
 flake8-eradicate = "^0.3.0"
