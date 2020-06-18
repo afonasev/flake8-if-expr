@@ -1,0 +1,18 @@
+config:
+  - ".github/**"
+  - ".gitignore"
+  - "setup.cfg"
+  - "Makefile"
+
+enhancement:
+  - "flake8_if_expr/*"
+
+tests:
+  - "tests/*"
+
+documentation:
+  - "README.md"
+
+dependencies:
+  - "poetry.lock"
+  - "pyproject.toml"

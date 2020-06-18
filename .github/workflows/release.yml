@@ -1,0 +1,22 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build and publish to pypi
+      uses: JRubics/poetry-publish@v1
+      with:
+        python_version: 3.8.3
+        poetry_version: '==1.0.9'  # (PIP version specifier syntax)
+        pypi_token: ${{ secrets.PYPI_TOKEN }}
