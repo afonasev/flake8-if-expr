@@ -17,23 +17,19 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - uses: actions/cache@v2
-      if: startsWith(runner.os, 'Linux')
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-
     - name: Set up Poetry
       uses: dschep/install-poetry-action@v1.3
       with:
         version: 1.0.9
 
+    - uses: actions/cache@v2
+      with:
+        path: ~/.cache/pypoetry
+        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: ${{ runner.os }}-poetry-
+
     - name: Install dependencies
-      run: |
-        poetry config virtualenvs.create false
-        poetry install --no-interaction --no-ansi
+      run: poetry install --no-interaction --no-ansi
 
     - name: Run linters and tests
       run: make ci
