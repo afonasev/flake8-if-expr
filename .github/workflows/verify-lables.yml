@@ -1,0 +1,14 @@
+name: "Verify labels for PR"
+
+on:
+  pull_request:
+    types: [opened, labeled, unlabeled, synchronize]
+
+jobs:
+  verify-labels:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: zwaldowski/match-label-action@v2
+        with:
+          allowed: 'fix, features, documentation, tests, config'
