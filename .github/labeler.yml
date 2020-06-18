@@ -4,7 +4,7 @@ config:
   - "setup.cfg"
   - "Makefile"
 
-features:
+enhancement:
   - "flake8_if_expr/*"
 
 tests:

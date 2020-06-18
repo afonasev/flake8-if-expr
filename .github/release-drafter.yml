@@ -4,11 +4,11 @@ tag-template: 'v$NEXT_PATCH_VERSION'
 categories:
   - title: ' New Features'
     labels:
-      - 'features'
+      - 'enhancement'
 
   - title: ' Bugs Fixes'
     labels:
-      - 'fix'
+      - 'bug'
 
   - title: ' Documentation'
     labels:
