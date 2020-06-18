@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  run:
+  release-draft:
     runs-on: ubuntu-18.04
 
     steps:
