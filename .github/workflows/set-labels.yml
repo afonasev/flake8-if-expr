@@ -1,10 +1,10 @@
-name: "Set labels for PR"
+name: set-labels
 
 on:
   - pull_request
 
 jobs:
-  set-labels:
+  run:
     runs-on: ubuntu-18.04
 
     steps:

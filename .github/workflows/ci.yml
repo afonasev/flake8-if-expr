@@ -3,7 +3,7 @@ name: ci
 on: [push]
 
 jobs:
-  ci:
+  run:
     runs-on: ubuntu-18.04
     strategy:
       matrix:

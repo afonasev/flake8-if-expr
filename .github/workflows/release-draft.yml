@@ -1,4 +1,4 @@
-name: "Add release draft"
+name: release-draft
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  release-draft:
+  run:
     runs-on: ubuntu-18.04
 
     steps:
