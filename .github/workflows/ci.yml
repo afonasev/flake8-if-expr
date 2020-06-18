@@ -37,9 +37,6 @@ jobs:
         poetry install --no-interaction --no-ansi
 
     - name: Run linters and tests
-      run: make lint test
-
-    - name: Check code coverage
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-      run: codecov
+      run: make ci

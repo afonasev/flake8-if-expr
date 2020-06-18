@@ -23,5 +23,5 @@ precommit_hook:
 	echo '#!/bin/sh\nmake lint test\n' > .git/hooks/pre-commit
 	chmod +x .git/hooks/pre-commit
 
-ci: BIN =
 ci: lint test
+ci: $(BIN)codecov
