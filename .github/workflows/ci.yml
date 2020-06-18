@@ -32,8 +32,9 @@ jobs:
     - name: Install dependencies
       if: steps.cache.outputs.cache-hit != 'true'
       run: |
-        poetry config settings.virtualenvs.in-project false
-        poetry config settings.virtualenvs.path ~/.poetry_cache
+        poetry config virtualenvs.create true
+        poetry config virtualenvs.in-project false
+        poetry config virtualenvs.path ~/.poetry_cache
         poetry install --no-interaction --no-ansi
 
     - name: Run linters and tests
