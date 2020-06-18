@@ -25,10 +25,6 @@ jobs:
         poetry config virtualenvs.create false
         poetry install --no-interaction --no-ansi
 
-    - name: Run linters
+    - name: Run linters and tests
       run: |
-        make lint
-
-    - name: Run tests
-      run: |
-        make test
+        make ci
