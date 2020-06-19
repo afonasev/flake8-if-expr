@@ -18,3 +18,12 @@ jobs:
         python_version: 3.8.3
         poetry_version: '==1.0.9'  # (PIP version specifier syntax)
         pypi_token: ${{ secrets.PYPI_TOKEN }}
+
+    - name: Generate GITHUB release with changelog
+      uses: release-drafter/release-drafter@v5
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag: ${{ github.ref }}
+        version: ${{ github.ref }}
+        publish: true

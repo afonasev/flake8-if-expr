@@ -2,23 +2,38 @@ name-template: 'v$NEXT_PATCH_VERSION'
 tag-template: 'v$NEXT_PATCH_VERSION'
 
 categories:
-  - title: ' New Features'
+  - title: '🚀 New Features'
     labels:
       - 'enhancement'
+      - 'feature'
 
-  - title: ' Bugs Fixes'
+  - title: '🐛 Bugs Fixes'
     labels:
       - 'bug'
+      - 'bug_fix'
+      - 'fix'
 
-  - title: ' Documentation'
+  - title: '📄 Documentation'
     labels:
       - 'documentation'
+      - 'docs'
 
-  - title: ' Configuration'
+  - title: '🔧 Configuration'
     labels:
       - 'config'
+      - 'conf'
+
+references:
+  - master
+  - v.+
+
+exclude-labels:
+  - 'skip-changelog'
 
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 template: |
   ## Changes
   $CHANGES
+
+  ## 👍Contributors
+  $CONTRIBUTORS

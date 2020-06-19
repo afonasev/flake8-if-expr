@@ -14,5 +14,5 @@ closes #[issue number]
 
 ## Check list
 
-- [] Tests
-- [] README.md changed if needed
+- [ ] Tests
+- [ ] README.md changed if needed
