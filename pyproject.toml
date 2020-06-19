@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flake8-if-expr"
-version = "1.0.3"
+version = "1.0.4"
 description = "The plugin checks `if expressions` (ternary operator)"
 authors = ["Afonasev Evgeniy <ea.afonasev@gmail.com>"]
 license = "MIT"
