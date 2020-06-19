@@ -1,5 +1,5 @@
 ---
-name: "\U0001F41B Bug fix"
+name: "🐛 Bug fix"
 about: Fix a bug
 labels: bug
 

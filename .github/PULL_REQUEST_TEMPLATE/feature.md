@@ -1,5 +1,5 @@
 ---
-name: "⭐ Feature"
+name: "🚀 Feature"
 about: Feature implementation
 labels: enhancement
 
