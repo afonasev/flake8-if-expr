@@ -8,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://en.wikipedia.org/wiki/MIT_License)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
+## Description
+
 The plugin forbids `if expressions` (ternary operator).
 
 ## Installation
@@ -16,7 +18,7 @@ The plugin forbids `if expressions` (ternary operator).
 pip install flake8-if-expr
 ```
 
-## Example
+## Examples
 
 ```python
 # code.py
@@ -29,30 +31,3 @@ $ flake8 code.py
 x = 1 if 2 else 3
     ^
 ```
-
-## License
-
-MIT
-
-## Change Log
-
-### 1.0.0 - 2019.05.23
-
-* update flake8-plugin-utils version to v1.0
-
-### 0.2.1 - 2019.02.26
-
-* update flake8-plugin-utils version
-
-### 0.2.0 - 2019.02.09
-
-* Rewriting with flake8-plugin-utils
-
-### 0.1.1 - 2019.02.08
-
-* Remove pycodestyle from dependencies
-* KEK101 error code [#2](https://github.com/Afonasev/flake8-if-expr/pull/2)
-
-### 0.1.0 - 2019.02.07
-
-* First release

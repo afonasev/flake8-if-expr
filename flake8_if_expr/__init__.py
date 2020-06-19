@@ -2,7 +2,7 @@ import ast
 
 from flake8_plugin_utils import Error, Plugin, Visitor
 
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 
 class IfExprFound(Error):

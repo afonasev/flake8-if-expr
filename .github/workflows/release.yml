@@ -2,11 +2,11 @@ name: release
 
 on:
   push:
-    # tags:
-    #   - 'v*.*.*'
+    tags:
+      - 'v*.*.*'
 
 jobs:
-  release:
+  publish-to-pypi:
     runs-on: ubuntu-18.04
 
     steps:
@@ -22,30 +22,20 @@ jobs:
       with:
         version: 1.0.9
 
-    # - uses: actions/cache@v2
-    #   id: cache
-    #   with:
-    #     path: ./.venv
-    #     key: ${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}
-    #     restore-keys: ${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}
-
-    # - name: Install dependencies
-    #   if: steps.cache.outputs.cache-hit != 'true'
-    #   run: |
-    #     poetry config virtualenvs.create true
-    #     poetry config virtualenvs.in-project true
-    #     poetry install --no-interaction --no-ansi
-
     - name: Build and publish to pypi
       run: |
         poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
-        poetry build
+        poetry publish --build
 
+  generate-change-log:
+    runs-on: ubuntu-18.04
+
+    steps:
     - name: Generate GITHUB release with changelog
       uses: release-drafter/release-drafter@v5
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag: v1.0.2 # ${{ github.ref }}
-        version: v1.0.2 # ${{ github.ref }}
+        tag: ${{ github.ref }}
+        version: ${{ github.ref }}
         publish: true
