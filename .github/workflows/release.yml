@@ -36,4 +36,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
+        tag: v1.0.4a
         publish: true
