@@ -15,4 +15,3 @@ documentation:
 
 dependencies:
   - "poetry.lock"
-  - "pyproject.toml"
