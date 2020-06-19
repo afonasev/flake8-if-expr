@@ -2,8 +2,8 @@ name: release
 
 on:
   push:
-    # tags:
-    #   - 'v*.*.*'
+    tags:
+      - 'v*.*.*'
 
 jobs:
   publish-to-pypi:
@@ -22,10 +22,10 @@ jobs:
       with:
         version: 1.0.9
 
-    # - name: Build and publish to pypi
-    #   run: |
-    #     poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
-    #     poetry publish --build
+    - name: Build and publish to pypi
+      run: |
+        poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
+        poetry publish --build
 
   generate-change-log:
     runs-on: ubuntu-18.04
