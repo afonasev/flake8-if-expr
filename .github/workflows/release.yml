@@ -27,11 +27,13 @@ jobs:
         poetry config pypi-token.pypi ${{ secrets.PYPI_TOKEN }}
         poetry publish --build
 
-  generate-change-log:
-    runs-on: ubuntu-18.04
+  # publish-release-draft:
+  #   runs-on: ubuntu-18.04
 
-    steps:
-    - name: Generate GITHUB release with changelog
-      uses: release-drafter/release-drafter@v5
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #   steps:
+  #   - name: Publish GITHUB release with changelog
+  #     uses: release-drafter/release-drafter@v5
+  #     env:
+  #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     with:
+  #       publish: true
