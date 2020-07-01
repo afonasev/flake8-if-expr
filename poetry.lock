@@ -181,8 +181,8 @@ category = "dev"
 description = "Flake8 plugin to find commented out code"
 name = "flake8-eradicate"
 optional = false
-python-versions = ">=3.6,<4.0"
-version = "0.3.0"
+python-versions = ">=3.5,<4.0"
+version = "0.4.0"
 
 [package.dependencies]
 attrs = "*"
@@ -633,7 +633,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "41000052d21ccf882f830d2b40e3032d42b4b492ec66aac6c8abd65402d4c314"
+content-hash = "e10631f4c6c8c1f0dc6360d8089cc943b0fd6055beaf76112e6867ac9ae3e15d"
 python-versions = "^3.6"
 
 [metadata.files]
@@ -727,8 +727,8 @@ flake8-comprehensions = [
     {file = "flake8_comprehensions-3.2.3-py3-none-any.whl", hash = "sha256:44eaae9894aa15f86e0c86df1e218e7917494fab6f96d28f96a029c460f17d92"},
 ]
 flake8-eradicate = [
-    {file = "flake8-eradicate-0.3.0.tar.gz", hash = "sha256:d0b3d283d85079917acbfe39b9d637385cd82cba3ae3d76c1278c07ddcf0d9b9"},
-    {file = "flake8_eradicate-0.3.0-py3-none-any.whl", hash = "sha256:e8b32b32300bfb407fe7ef74667c8d2d3a6a81bdf6f09c14a7bcc82b7b870f8b"},
+    {file = "flake8-eradicate-0.4.0.tar.gz", hash = "sha256:be5ea4521dfd4cb76837635f9ace57e12a7336c4b82054c99fd0394c00eef8ce"},
+    {file = "flake8_eradicate-0.4.0-py3-none-any.whl", hash = "sha256:804a39aef145c193e8d77770efc45df82e631b29c4456ecb5ff2e2e5996cf09a"},
 ]
 flake8-isort = [
     {file = "flake8-isort-3.0.0.tar.gz", hash = "sha256:3ce227b5c5342b6d63937d3863e8de8783ae21863cb035cf992cdb0ba5990aa3"},
